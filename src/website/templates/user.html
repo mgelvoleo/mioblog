@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %} User Management {% endblock %}
+
+
+
+
+
+
+{% block navigation %}
+    <h1>Logo</h1>
+    <ul>
+        <li>fd</li>
+        <li>fdf</li>
+        <li>fd</li>
+    </ul>
+
+    <p>Welcome {{ fname }}</p>
+    {% endblock %}
+
+
+    {% block content %}
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{ msg }}</p>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+
+    <h1>User</h1>
+{% endblock %}
+
+
+{% block footer %}
+    <p>Footer</p>
+{% endblock %}
